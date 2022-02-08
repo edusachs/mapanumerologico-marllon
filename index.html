@@ -182,9 +182,9 @@ if (!ObterParametroUrl('src') && !Cookies.get('PCLI')) {
 
 var md = new MobileDetect(window.navigator.userAgent);
 if (md.mobile()) {
-        if (origem_trafego) urlcompra=urlcompra+'?src='+origem_trafego+'-Site01-Mobile'+'-PCLI-'+PCLI;
+        if (origem_trafego) urlcompra=urlcompra+'&src='+origem_trafego+'-Site01-Mobile'+'-PCLI-'+PCLI;
 } else {
-        if (origem_trafego) urlcompra=urlcompra+'?src='+origem_trafego+'-Site01-Desktop'+'-PCLI-'+PCLI;
+        if (origem_trafego) urlcompra=urlcompra+'&src='+origem_trafego+'-Site01-Desktop'+'-PCLI-'+PCLI;
 }
 
 jQuery(document).ready(function($){ 
